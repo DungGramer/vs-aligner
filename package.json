@@ -1,0 +1,97 @@
+{
+  "name": "vs-aligner",
+  "displayName": "VS Aligner",
+  "version": "1.0.0",
+  "description": "VS Aligner is a powerful Visual Studio Code extension that simplifies code alignment and comment formatting. It enhances your coding experience by allowing you to align code comments effortlessly according to your preferred tab size and alignment character.",
+  "author": {
+    "name": "DungGramer",
+    "email": "dung.dev.gramer@gmail.com",
+    "url": "https://dunggramer.com"
+  },
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Formatters",
+    "Other"
+  ],
+  "keywords": [
+    "formatter",
+    "aligner",
+    "comment",
+    "javascript",
+    "lint"
+  ],
+  "icon": "images/icon.png",
+  "galleryBanner": {
+    "color": "#2d313a",
+    "theme": "light"
+  },
+  "activationEvents": [],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "vs-aligner.align",
+        "title": "VS Aligner: Align"
+      }
+    ],
+    "configuration": [
+      {
+        "type": "object",
+        "title": "Comment Aligner Configuration",
+        "properties": {
+          "commentAligner.tabSize": {
+            "type": "integer",
+            "default": null,
+            "description": "Set the number of spaces for alignment (default is user setting)."
+          },
+          "commentAligner.alignmentChar": {
+            "type": "string",
+            "default": " ",
+            "description": "Choose the character used for alignment (default is space)."
+          }
+        }
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "yarn run package",
+    "compile": "webpack",
+    "watch": "webpack --watch",
+    "package": "webpack --mode production --devtool hidden-source-map",
+    "compile-tests": "tsc -p . --outDir out",
+    "watch-tests": "tsc -p . -w --outDir out",
+    "pretest": "yarn run compile-tests && yarn run compile && yarn run lint",
+    "lint": "eslint src --ext ts",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.85.0",
+    "@types/mocha": "^10.0.6",
+    "@types/node": "18.x",
+    "@typescript-eslint/eslint-plugin": "^6.15.0",
+    "@typescript-eslint/parser": "^6.15.0",
+    "eslint": "^8.56.0",
+    "typescript": "^5.3.3",
+    "ts-loader": "^9.5.1",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4",
+    "@vscode/test-cli": "^0.0.4",
+    "@vscode/test-electron": "^2.3.8"
+  },
+  "pricing": "Free",
+  "sponsor": {
+    "url": "https://github.com/sponsors/DungGramer/"
+  },
+  "homepage": "https://github.com/DungGramer/vs-aligner#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DungGramer/vs-aligner.git"
+  },
+  "bugs": {
+    "url": "https://github.com/DungGramer/vs-aligner/issues",
+    "email": "dung.dev.gramer@gmail.com"
+  },
+  "license": "MIT"
+}
