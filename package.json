@@ -1,7 +1,7 @@
 {
   "name": "vs-aligner",
   "displayName": "VS Aligner",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "publisher": "DungGramer",
   "description": "VS Aligner is a powerful Visual Studio Code extension that simplifies code alignment and comment formatting. It enhances your coding experience by allowing you to align code comments effortlessly according to your preferred tab size and alignment character.",
   "author": {
@@ -25,7 +25,7 @@
   ],
   "icon": "images/icon.png",
   "galleryBanner": {
-    "color": "#2d313a",
+    "color": "#fefdf3",
     "theme": "light"
   },
   "activationEvents": [],
