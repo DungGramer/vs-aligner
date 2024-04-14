@@ -1,6 +1,5 @@
 # VSCode Aligner Extension
 
-![VSCode Version](https://img.shields.io/badge/VSCode-1.0.0-blue)
 ![License](https://img.shields.io/github/license/DungGramer/vs-aligner)
 
 Align your comments effortlessly in Visual Studio Code with the VSCode Comment Aligner Extension. This extension allows you to quickly align comments in your code for improved readability and consistency.
@@ -9,14 +8,15 @@ Align your comments effortlessly in Visual Studio Code with the VSCode Comment A
 
 - Align comments within a selected range in your code.
 - Automatically detects and aligns comments with different lengths.
-- Supports single-line comments. (feature update: support multi-line)
+- Supports single-line comments.
+- Define the character users want to align columns. 
 - Easily customizable to fit your preferred comment alignment style.
 
 ## Installation
 
 1. Launch Visual Studio Code.
 2. Go to the Extensions view by clicking on the Extensions icon in the Activity Bar on the side of the window.
-3. Search for "VSCode Comment Aligner" in the Extensions view search box.
+3. Search for [VSCode Comment Aligner](https://marketplace.visualstudio.com/items?itemName=DungGramer.vs-aligner) in the Extensions view search box.
 4. Click the Install button to install the extension.
 5. Once installed, you can use the extension to align comments in your code.
 
@@ -35,6 +35,7 @@ Here are some available configuration options:
 
 - `commentAligner.tabSize`: Set the number of spaces for alignment (default is 4 spaces).
 - `commentAligner.alignmentChar`: Choose the character used for alignment (default is space).
+- `commentAligner.delimiter`: Define the character users want to align columns.
 - And more!
 <!-- - `commentAligner.ignorePatterns`: Define patterns to ignore lines that should not be aligned.   -->
 
@@ -46,10 +47,6 @@ This extension is licensed under the [MIT License](LICENSE).
 
 Contributions are welcome! Feel free to open issues or pull requests on the [GitHub repository](https://github.com/DungGramer/vs-aligner).
 
-## Acknowledgments
-
-Special thanks to the VSCode community and the developers of other comment alignment extensions for inspiration.
-
 ## Contact
 
 For any questions, issues, or suggestions, please [open an issue](https://github.com/DungGramer/vs-aligner/issues) on the GitHub repository.
@@ -58,6 +55,6 @@ For any questions, issues, or suggestions, please [open an issue](https://github
 
 Happy coding!
 
-![DungGramer](https://avatars.githubusercontent.com/DungGramer)
+<!-- ![DungGramer](https://avatars.githubusercontent.com/DungGramer) -->
 
 [DungGramer](https://github.com/DungGramer)

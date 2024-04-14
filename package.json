@@ -1,7 +1,8 @@
 {
   "name": "vs-aligner",
   "displayName": "VS Aligner",
-  "version": "1.0.0",
+  "version": "1.2.0",
+  "publisher": "DungGramer",
   "description": "VS Aligner is a powerful Visual Studio Code extension that simplifies code alignment and comment formatting. It enhances your coding experience by allowing you to align code comments effortlessly according to your preferred tab size and alignment character.",
   "author": {
     "name": "DungGramer",
@@ -43,13 +44,23 @@
         "properties": {
           "commentAligner.tabSize": {
             "type": "integer",
-            "default": null,
+            "default": 4,
             "description": "Set the number of spaces for alignment (default is user setting)."
           },
           "commentAligner.alignmentChar": {
             "type": "string",
             "default": " ",
             "description": "Choose the character used for alignment (default is space)."
+          },
+          "commentAligner.delimiter": {
+            "type": "array",
+            "default": [
+              "//"
+            ],
+            "description": "Define the character users want to align columns.",
+            "items": {
+              "type": "string"
+            }
           }
         }
       }
